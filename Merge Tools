@@ -1,0 +1,9 @@
+def merge_the_tools(string, k):
+    for i in range(0,len(string),k): #Avanza de k en k
+        print("".join(dict.fromkeys(string[i:i+k])))  #imprime un string ("".join), sin repeticiones (dic.fromkeys) del string de i a i + k
+
+        
+
+if __name__ == '__main__':
+    string, k = input(), int(input())
+    merge_the_tools(string, k)
